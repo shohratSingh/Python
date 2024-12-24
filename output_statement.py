@@ -31,4 +31,3 @@ print()
 #here there is a @ between value of a and b and in the next line value of c will be printed includeing n albhabet
 print(a,b,sep='@')
 print(c,end='n')
-

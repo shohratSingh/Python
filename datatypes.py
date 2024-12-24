@@ -1,4 +1,4 @@
-#here we will discuss about datatypes, there are 2 types (i)single value datatype (ii) multi value datadtype
+#here we will discuss about datatypes, there are 2 types (i)single value datatype (ii) multi value datatype
 
 #single value datatype
 
