@@ -4,3 +4,6 @@
 # key = keyword.kwlist
 # print(key)
 
+
+s='hello'
+print(dir())

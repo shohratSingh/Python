@@ -1,4 +1,15 @@
-#Details stored in variable in diffrent cases.
+#variables are the containers used to store values or memory address
+
+#multi veriable and multi value
+a,b,c,d=1,2,3,4
+print(a,b,c,d)
+
+#single veriable and multi value also known as "Tuple"
+t=10,20,30,40,50
+print(type(t))
+
+
+#some more examples of veriables
 
 #CASE 1:-
 
@@ -31,7 +42,7 @@ print(pg)
 
 #CASE 3:-
 
-rapido = "usernaem", "password", "login", "home", "new ride", "origin", "destination", "payment method", " payment", "ride_rating"
+rapido = "username", "password", "login", "home", "new ride", "origin", "destination", "payment method", " payment", "ride_rating"
 print(rapido) 
 
 events = "cook without fire", "chess", "cricket", "badminton", "group discussion", "dancing", "singing", "rangoli", "debate", "e-sports"
@@ -42,6 +53,3 @@ print(signup)
 
 gmail = "all inboxes", "primary", "promotions", "social", "updates", "starred", "snoozed", "important", "sent", "scheduled", "outbox", "drafts", "all mail", "spam", "trash"
 print(gmail)
-
-
-

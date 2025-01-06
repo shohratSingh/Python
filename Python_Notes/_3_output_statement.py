@@ -1,5 +1,7 @@
-#output statement
+#in python print is used as output statement which is used to display the output
+#print accept 3 argumnents i.e. print(veriable/valus,seperator='',end='') and seperator and end is optional to pass and veriable/value is mandatory
 
+#examples:-
 a = 10
 b = 20
 c = 30
@@ -28,6 +30,6 @@ print(a)
 #here a empty line will be printed
 print() 
 
-#here there is a @ between value of a and b and in the next line value of c will be printed includeing n albhabet
+#here there is a @ between value of a and b and in the next line value of c will be printed includeing n alphabet
 print(a,b,sep='@')
 print(c,end='n')
