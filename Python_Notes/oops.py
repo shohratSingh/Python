@@ -163,30 +163,61 @@
 #Constructor
 """to call method implicitly we use constructor"""
 
-class Company:
-    c_name='TCS'
-    c_address='Gurugram'
-    C_email='tcs123@yahoo.com'
+# class Company:
+#     c_name='TCS'
+#     c_address='Gurugram'
+#     C_email='tcs123@yahoo.com'
 
-    def __init__(self,id,name,age,address):
-        self.id=id
-        self.name=name
-        self.age=age
-        self.address=address
+#     def __init__(self,id,name,age,address):
+#         self.id=id
+#         self.name=name
+#         self.age=age
+#         self.address=address
     
-    def display(self):
-        print(self.id,self.name,self.age,self.address)
-    def rename(self,new_address):
-        self.address=new_address
+#     def display(self):
+#         print(self.id,self.name,self.age,self.address)
+#     def rename(self,new_address):
+#         self.address=new_address
 
-person1=Company(101,'Rio',24,'Gurugram')
-person2=Company(102,'Vishal',21,'Gurugram')
-person3=Company(103,'Shohrat',23,'Gurugram')
+# person1=Company(101,'Rio',24,'Gurugram')
+# person2=Company(102,'Vishal',21,'Gurugram')
+# person3=Company(103,'Shohrat',23,'Gurugram')
+#
+# person1.rename('Kolkata')
+# person2.rename('Bihar')
+# person3.rename('Uttar Pradesh')
+#
+# person1.display()
+# person2.display()
+# person3.display()
 
-person1.rename('Kolkata')
-person2.rename('Bihar')
-person3.rename('Uttar Pradesh')
 
-person1.display()
-person2.display()
-person3.display()
+
+#abstraction
+import abc
+
+class Whatsapp(abc.ABC):
+    @abc.abstractmethod
+    def chat(self):
+        ... 
+
+    @abc.abstractmethod
+    def group(self):
+        ...
+
+    @abc.abstractmethod
+    def call(self):
+        ...
+    
+class Dev1(Whatsapp):
+    def chat(self):
+        print("chat is loading")
+class Dev2(Dev1):
+    def group(self):
+        print("group is in process")
+class Dev3(Dev2):
+    def call(self):
+        print("call is loaded")
+
+s=Dev3()
+print(s.chat(),s.group(),s.call())
