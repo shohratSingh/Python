@@ -194,30 +194,50 @@
 
 
 #abstraction
-import abc
+# import abc
+# class Whatsapp(abc.ABC):
+#     @abc.abstractmethod
+#     def chat(self):
+#         ... 
 
-class Whatsapp(abc.ABC):
-    @abc.abstractmethod
-    def chat(self):
-        ... 
+#     @abc.abstractmethod
+#     def group(self):
+#         ...
 
-    @abc.abstractmethod
-    def group(self):
-        ...
-
-    @abc.abstractmethod
-    def call(self):
-        ...
+#     @abc.abstractmethod
+#     def call(self):
+#         ...
     
-class Dev1(Whatsapp):
-    def chat(self):
-        print("chat is loading")
-class Dev2(Dev1):
-    def group(self):
-        print("group is in process")
-class Dev3(Dev2):
-    def call(self):
-        print("call is loaded")
+# class Dev1(Whatsapp):
+#     def chat(self):
+#         print("chat is loading")
+# class Dev2(Dev1):
+#     def group(self):
+#         print("group is in process")
+# class Dev3(Dev2):
+#     def call(self):
+#         print("call is loaded")
 
-s=Dev3()
-print(s.chat(),s.group(),s.call())
+# s=Dev3()
+# print(s.chat(),s.group(),s.call())
+
+
+#Polymorphism
+class Example:
+    def type(self,arg):
+        if type(arg)==str:
+            print(arg[::-1])
+        elif type(arg)==list:
+            print(arg[::2])
+        elif type(arg)==tuple:
+            print(arg[::-1])
+        elif type(arg)==dict:
+            print(arg.values)
+        else:
+            print("Invalid datatypes")
+e=Example()
+e.type('Hello')
+e.type([10,20,30])
+e.type((10,20,30))
+e.type({'a':1,'b':2})
+e.type(10)

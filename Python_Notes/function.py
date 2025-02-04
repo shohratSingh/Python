@@ -61,5 +61,3 @@
 #     else:
 #         print("not a plaindrome")
 # pali_num(121)
-
-
