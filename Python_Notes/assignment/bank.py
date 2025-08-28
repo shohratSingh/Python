@@ -1,5 +1,4 @@
 import random
-
 users = []
 
 class Bank:

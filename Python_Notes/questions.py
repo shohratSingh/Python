@@ -157,3 +157,121 @@
 #         print("ASCII code of input is not even")
 # else:
 #     print("input is not in alphabet")
+
+#---------------------------------------------------------------------------------------------------------#
+
+# ls = [0, 1, 2, 3, 0, 0, 0, 4, 5, 8, 0]
+# l = []
+# for i in ls:
+#     if i != 0:
+#         l.append(i) #l+=[i]
+# for i in ls:
+#     if i == 0:
+#         l.append(i) #l+=[i]
+# print(l)
+
+
+# ''' waf to get the following output :           -- 
+# s = 'happy morning be safe'
+#  out : {happy : 1 , morning : 2 , be : 1 , safe : 2}
+#  count the vowels in each word'''
+
+# s = 'happy morning be safe'
+# # S = s.split()
+# d = {}
+
+# for i in s.split():
+#     count = 0
+#     for j in i:
+#         if j in 'AEIOUaeiou':
+#             count+=1
+#             d[i]=count
+# print(d)
+
+# ''' s = 'hai hello how are you'
+#  out : 'iah olleh woh era uoy'''
+
+# s = 'hai hello how are you'
+# out = ''
+
+# for i in s.split():
+#     out +=i[::-1]+' '
+# print(out)
+
+
+# ''' s = 'hello buddy how are you'
+#  out : {hello : eo , buddy : u , how : o ....}'''
+
+
+# s = 'hello buddy how are you'
+
+# d={}
+
+# for i in s.split():
+#     added =''
+#     for j in i:
+#         if j in 'AEIOUaeiou':
+#             added+=j
+#             d[i] = added
+# print(d)
+
+
+# '''waf to fetch the last digit of a number | No slicing or type conversion should be used !'''
+
+# digit = 123456
+# hehe =digit%10
+# print(hehe)
+
+# num = 3679
+# def last_digit(num):
+#     return num % 10
+# print(last_digit(num))
+
+# '''waf to get sum of all the integer passed to a func as value of variable length positional arguments'''
+# def sum(*args):
+#     out = 0
+#     for i in args:
+#         out+=i
+#     return out
+
+# print(sum(1,2,4,5,9))
+
+'''waf to check that the number is a strong number or not'''
+
+
+
+
+
+
+# '''waf to get the output : 
+#  s = 'hello buddy how are you'
+#  out = {h: [hello ,  how ] , b : [buddy] ,a : [are] , y : [you]}'''
+
+# s = 'hello buddy how are you'
+# out = {}
+
+# for i in s.split():
+#     if i[0] not in out:
+#         out[i[0]] = [i]
+#     else:
+#         out[i[0]].append(i)
+# print(out)
+
+
+s = int(input("Enter number to check prime numaber =  "))
+if s <=1:
+    print('Not Prime')
+elif s == 2:
+    print('Prime')
+else:
+    for i in range(2,s):
+        if s%i==0:
+            print("Not Prime")
+            break
+    else:
+        print('Prime')
+
+
+
+
+
